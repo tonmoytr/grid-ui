@@ -16,10 +16,12 @@ async function Home() {
 export default async function GridPage() {
   const data = await Home();
 
+//   max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto
+
   return (
-    <div className="max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto ">
+    <div className="max-w-3xl md:max-w-7xl lg:max-w-full mx-auto">
       {data.map((item) => (
-        <div className="my-[10%]">
+        <div className="my-[5%]">
           <Grids key={item.id} item={item}></Grids>
         </div>
       ))}
