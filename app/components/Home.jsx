@@ -21,7 +21,7 @@ export default async function GridPage() {
   return (
     <div className="max-w-3xl md:max-w-7xl lg:max-w-full mx-auto">
       {data.map((item) => (
-        <div className="my-[5%]">
+        <div className="my-[2%]">
           <Grids key={item.id} item={item}></Grids>
         </div>
       ))}
